@@ -7,17 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <jsp:include page= "myHeader.html" />
-    <h3>Hello IAS Vikas</h3>
-    
-  <%
-     for(int i=1;i<=5;i++){
-    	 out.println("<br/> Welcome - "+ i);
-     }
-  
-  
-  %>
-  <hr/>
-   <jsp:include page="myFooter.jsp"/>
+         The registration is confirmed!!.  <%= request.getParameter("firstName") %> <%= request.getParameter("lastName") %>
 </body>
 </html>
