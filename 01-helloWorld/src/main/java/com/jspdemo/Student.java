@@ -3,10 +3,20 @@ package com.jspdemo;
 public class Student {
    private String firstName;
    private String lastName;
+   private boolean rankHolder;
    
-public Student(String firstName, String lastName) {
+public Student(String firstName, String lastName,boolean rankHolder) {
 	this.firstName = firstName;
 	this.lastName = lastName;
+	this.rankHolder = rankHolder;
+}
+
+public boolean isRankHolder() {
+	return rankHolder;
+}
+
+public void setRankHolder(boolean rankHolder) {
+	this.rankHolder = rankHolder;
 }
 
 public String getFirstName() {
