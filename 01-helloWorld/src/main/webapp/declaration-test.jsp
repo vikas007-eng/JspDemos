@@ -18,6 +18,14 @@
      %>
           
           Lower case "Hello World = " <%= makeItLower("HELLOW WORLD") %>
+          
+              <c:set var="myNewDate" value="<%= new java.util.Date() %>" /> 
+     <!-- 
+              Date myNewDate = new java.util.Date()
+     since we have imported lib. no need to use this to declare var <%! %> 
+           
+     -->
+     
      
 </body>
 </html>
